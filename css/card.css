@@ -1,0 +1,29 @@
+.card {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 80px;
+    margin-inline-end: 80px;
+}
+
+.card .comment {
+    gap: 24px;
+    background-color: #FFFFFF52;
+    border-radius: 10px;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    padding: 80px;
+}
+
+.card .comment span {
+    font: var(--headline4);
+}
+
+.card .comment p {
+    font: var(--headline5);
+    opacity: 50%;
+}
+
+.card .comment img {
+    margin: auto;
+}
