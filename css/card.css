@@ -16,14 +16,25 @@
 }
 
 .card .comment span {
-    font: var(--headline4);
+    font: var(--button);
 }
 
 .card .comment p {
-    font: var(--headline5);
+    font: var(--caption);
     opacity: 50%;
 }
 
 .card .comment img {
     margin: auto;
+}
+
+@media screen and (min-width: 768px)  {
+    .card .comment span {
+        font: var(--headline4);
+    }
+    
+    .card .comment p {
+        font: var(--headline5);
+        opacity: 50%;
+    }
 }
