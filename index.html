@@ -11,25 +11,29 @@
 </head>
 
 <body>
-    <div class="wrapper">
 
-        <header class="header">
-            <img src="./images/LOGO.png" alt="logo" width="70" height="20px">
-            <nav class="menu" aria-label="main-navigation">
-                <ul>
-                    <li>
-                        <a href="#main">Hola</a>
-                    </li>
-                    <li>
-                        <a href="#project">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#content">Hablemos</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="button">Currículum</button>
-        </header>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <img src="./images/LOGO.png" alt="logo" width="70" height="20px">
+                <nav class="menu" aria-label="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="#main">Hola</a>
+                        </li>
+                        <li>
+                            <a href="#project">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Hablemos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="button">Currículum</button>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
 
         <section aria-label="main" class="hero" id="main">
             <div class="hero-image">
@@ -59,15 +63,15 @@
                 <p>A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e
                     increíbles</p>
                 <p class="bold">Aquí hay algunos que me gustaría compartir.</p>
-                <a class="icon-secondary" href="tel:1234567890"><img src="./icons/icons-down.svg"></a>
+                <a class="icon-secondary" href="#project"><img src="./icons/icons-down.svg"></a>
             </div>
 
-            <div class="testimony">
-                <div class="testimony-image">
+            <div class="project" id="project">
+                <div class="project-image">
                     <img src="./images/img.png" alt="leonidad">
                 </div>
-                <div class="testimony-description">
-                    <a class="testimony-title" href="https://leonidadesteban.com/">leonidasesteban.com</a>
+                <div class="project-description">
+                    <a class="title" href="https://leonidadesteban.com/">leonidasesteban.com</a>
                     <p>Accede a más de 120 proyectos que te ayudarán a mejorar
                         tus habilidades como desarrollador Front-End.</p>
                     <a target="_blank" href="https://www.github.com/brandonhxrr/taller-portafolio"
@@ -86,12 +90,12 @@
                 </div>
             </div>
 
-            <div class="testimony">
-                <div class="testimony-image">
+            <div class="project">
+                <div class="project-image">
                     <img src="./images/marvol.png" alt="leonidad">
                 </div>
-                <div class="testimony-description">
-                    <a class="testimony-title" href="https://leonidadesteban.com/">MARVOL</a>
+                <div class="project-description">
+                    <a class="title" href="https://leonidadesteban.com/">MARVOL</a>
                     <p>Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de
                         televisión, videos y más oficiales de Marvol.</p>
                     <a target="_blank" href="https://www.github.com/brandonhxrr/taller-portafolio"
@@ -101,12 +105,20 @@
 
             </div>
 
-            <div class="testimony">
-                <div class="testimony-image">
+            <div class="card">
+                <div class="comment">
+                    <img src="./images/user1.png" alt="user">
+                    <span>"Jaume ha superado mis expectativas desde el diseño hasta el desarrollo".</span>
+                    <p class="semi">JASON LOPEZ / COFUNDADOR Y CEO MARVOL</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
                     <img src="./images/netnet.png" alt="leonidad">
                 </div>
-                <div class="testimony-description">
-                    <a class="testimony-title" href="https://leonidadesteban.com/">NETNET</a>
+                <div class="project-description">
+                    <a class="title" href="https://leonidadesteban.com/">NETNET</a>
                     <p>Películas y series ilimitadas y mucho más.
                         Disfruta donde quieras. Cancela cuando quieras.</p>
                     <a target="_blank" href="https://www.github.com/brandonhxrr/taller-portafolio"
@@ -115,25 +127,59 @@
                 </div>
 
             </div>
+
+            <div class="card">
+                <div class="comment">
+                    <img src="./images/user2.png" alt="user">
+                    <span>"Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos".</span>
+                    <p class="semi">MARCO CORTEZ / NETNET</p>
+                </div>
+            </div>
         </div>
+        <form action="" method="POST" class="form" id="contact">
+            <div class="form-content">
 
-        <footer class="footer">
-            <div class="footer-logo">
-                <img src="./images/LOGO.png" alt="logo" width="70" height="20px">
+                <h2 class="title">HABLEMOS</h2>  
+                <p> Si está interesado en trabajar conmigo en su próximo proyecto, 
+  no dude en ponerse en contacto conmigo.</p>
+              <label for="form-name">
+                  Nombre Completo
+                  <input required name="name" id="form-name" type="text" placeholder="Juan">
+              </label>
+  
+              <label for="form-email">
+                  Correo electrónico
+                  <input required name="email" id="form-email" type="email" placeholder="juan@example.com">
+              </label>
+  
+              <label for="form-message">
+                  Mensaje
+                  <textarea required name="message" id="form-message" type="text" cols="30" rows="7" placeholder="Mensaje"></textarea>
+              </label>
+  
+              <button class="button" type="submit">Enviar Mensaje</button>
             </div>
-            <div class="social">
-                <a class="button-icon" href="tel:1234567890"><img src="./icons/icon-phone.svg"></a>
+        </form>
+        <footer class="footer" id="contact">
+            <div class="footer-content">
 
-                <a class="button-icon" href="tel:1234567890"><img src="./icons/icon-important_mail.svg"></a>
-
-                <a class="button-icon" href="tel:1234567890"><img src="./icons/icon-instagram.svg"></a>
-
-                <a class="button-icon" href="tel:1234567890"><img src="./icons/icon-twitter_squared.svg"></a>
-            </div>
-            <div>
-                <p>Hecho con <img src="./icons/icon-heart_outline.svg" alt="icono de corazón"> por <a
-                        href="https://brandonhxrr.com">Brandon Herrera</a></p>
-                <p>Copyright 2021 - Todos los derechos reservados.</p>
+                <div class="footer-logo">
+                    <img src="./images/LOGO.png" alt="logo" width="70" height="20px">
+                </div>
+                <div class="social">
+                    <a class="button-icon" href="tel:1234567890"><img src="./icons/icon-phone.svg"></a>
+    
+                    <a class="button-icon" href="tel:1234567890"><img src="./icons/icon-important_mail.svg"></a>
+    
+                    <a class="button-icon" href="tel:1234567890"><img src="./icons/icon-instagram.svg"></a>
+    
+                    <a class="button-icon" href="tel:1234567890"><img src="./icons/icon-twitter_squared.svg"></a>
+                </div>
+                <div>
+                    <p>Hecho con <img src="./icons/icon-heart_outline.svg" alt="icono de corazón"> por <a
+                            href="https://brandonhxrr.com">Brandon Herrera</a></p>
+                    <p>Copyright 2021 - Todos los derechos reservados.</p>
+                </div>
             </div>
         </footer>
     </div>
